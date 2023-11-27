@@ -8,7 +8,7 @@ function taskBlock() {
     console.log(variable1); // Output: I am inside the block
   }
 
-  console.log(variable1); // Output: I am outside the block
+  console.log(variable1);
 }
 
 taskBlock();

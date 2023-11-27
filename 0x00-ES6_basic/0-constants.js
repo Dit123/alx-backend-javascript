@@ -1,4 +1,3 @@
-// Function using const for variable instantiation
 function taskFirst() {
   const pi = 3.14;
   const maxAttempts = 5;
