@@ -9,7 +9,6 @@ const createReportObject = (employeesList) => {
   return reportObject;
 };
 
-// Example usage:
 const departmentName = "Engineering";
 const employeeNames = ["Alice", "Bob", "Charlie"];
 

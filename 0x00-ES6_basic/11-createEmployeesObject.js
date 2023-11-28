@@ -7,7 +7,6 @@ const createEmployeesObject = (departmentName, employees) => {
   return employeesObject;
 };
 
-// Example usage:
 const departmentName = "Engineering";
 const employeeNames = ["Alice", "Bob", "Charlie"];
 

@@ -14,7 +14,6 @@ const createIteratorObject = (reportObject) => {
   return iteratorObject;
 };
 
-// Example usage:
 const departmentName = "Engineering";
 const employeeNames = ["Alice", "Bob", "Charlie"];
 

@@ -27,6 +27,5 @@ function taskNext() {
   console.log("counter:", counter);
 }
 
-// Example usage
 taskFirst();
 taskNext();

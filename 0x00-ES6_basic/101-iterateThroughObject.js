@@ -7,7 +7,6 @@ const iterateThroughObject = (reportWithIterator) => {
   }
 };
 
-// Example usage:
 const departmentName = "Engineering";
 const employeeNames = ["Alice", "Bob", "Charlie"];
 

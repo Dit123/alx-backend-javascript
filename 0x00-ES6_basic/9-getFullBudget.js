@@ -23,7 +23,5 @@ const getFullBudgetObject = (officeSupplies, internet, rent, utilities) => {
   return fullBudget;
 };
 
-// Example usage:
 const budget = getFullBudgetObject(50, 80, 1000, 200);
 budget.printBudgetSummary();
-

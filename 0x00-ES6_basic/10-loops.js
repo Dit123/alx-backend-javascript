@@ -14,7 +14,6 @@ const appendToEachArrayValue = (arrays, appendString) => {
   return result;
 };
 
-// Example usage:
 const originalArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 const newArray = appendToEachArrayValue(originalArrays, '_appended');
 console.log(newArray);

@@ -11,5 +11,4 @@ function taskBlock() {
   console.log(variable1); // Output: I am outside the block
 }
 
-// Example usage
 taskBlock();
