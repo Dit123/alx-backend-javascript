@@ -15,4 +15,3 @@ const report = createReportObject(employeesObject);
 const iterator = createIteratorObject(report);
 
 iterateThroughObject(iterator);
-

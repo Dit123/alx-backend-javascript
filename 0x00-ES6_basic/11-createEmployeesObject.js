@@ -12,4 +12,3 @@ const employeeNames = ["Alice", "Bob", "Charlie"];
 
 const employeesObject = createEmployeesObject(departmentName, employeeNames);
 console.log(employeesObject);
-

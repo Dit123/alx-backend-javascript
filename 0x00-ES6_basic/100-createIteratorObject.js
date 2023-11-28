@@ -25,4 +25,3 @@ console.log(iterator.next()); // Output: { value: 'Alice', done: false }
 console.log(iterator.next()); // Output: { value: 'Bob', done: false }
 console.log(iterator.next()); // Output: { value: 'Charlie', done: false }
 console.log(iterator.next()); // Output: { done: true }
-
