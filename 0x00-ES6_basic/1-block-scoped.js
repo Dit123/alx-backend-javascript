@@ -1,14 +1,11 @@
-function taskBlock() {
-  // Variables declared with let are block-scoped
-  let variable1 = "I am outside the block";
+export default function taskBlock(trueOrFalse) {
+  const task = false;
+  const task2 = true;
 
-  if (true) {
-    // Using let inside the block to avoid overwriting
-    let variable1 = "I am inside the block";
-    console.log(variable1); // Output: I am inside the block
+  if (trueOrFalse) {
+    const task = true; // eslint-disable-line no-unused-vars
+    const task2 = false; // eslint-disable-line no-unused-vars
   }
 
-  console.log(variable1);
+  return [task, task2];
 }
-
-taskBlock();

@@ -1,4 +1,9 @@
-const createBudget = (officeSupplies, internet, rent, utilities) => ({ officeSupplies, internet, rent, utilities });
+export default function getBudgetObject(income, gdp, capita) {
+  const budget = {
+    income,
+    gdp,
+    capita,
+  };
 
-const budget = createBudget(50, 80, 1000, 200);
-console.log(budget);
+  return budget;
+}

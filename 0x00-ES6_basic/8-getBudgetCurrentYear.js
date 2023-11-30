@@ -1,13 +1,14 @@
-const getBudgetForCurrentYear = (officeSupplies, internet, rent, utilities) => {
-  const currentYear = new Date().getFullYear();
+function getCurrentYear() {
+  const date = new Date();
+  return date.getFullYear();
+}
 
-  return {
-    [`${currentYear}_officeSupplies`]: officeSupplies,
-    [`${currentYear}_internet`]: internet,
-    [`${currentYear}_rent`]: rent,
-    [`${currentYear}_utilities`]: utilities,
+export default function getBudgetForCurrentYear(income, gdp, capita) {
+  const budget = {
+    [`income-${getCurrentYear()}`]: income,
+    [`gdp-${getCurrentYear()}`]: gdp,
+    [`capita-${getCurrentYear()}`]: capita,
   };
-};
 
-const budget = getBudgetForCurrentYear(50, 80, 1000, 200);
-console.log(budget);
+  return budget;
+}

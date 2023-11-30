@@ -1,14 +1,7 @@
-const createEmployeesObject = (departmentName, employees) => {
-  const employeesObject = {
-    department: departmentName,
-    employeeList: employees,
+export default function createEmployeesObject(departmentName, employees) {
+  return {
+    [departmentName]: [
+      ...employees,
+    ],
   };
-
-  return employeesObject;
-};
-
-const departmentName = "Engineering";
-const employeeNames = ["Alice", "Bob", "Charlie"];
-
-const employeesObject = createEmployeesObject(departmentName, employeeNames);
-console.log(employeesObject);
+}

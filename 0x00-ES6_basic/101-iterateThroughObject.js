@@ -1,17 +1,9 @@
-const iterateThroughObject = (reportWithIterator) => {
-  let nextEmployee = reportWithIterator.next();
+export default function iterateThroughObject(reportWithIterator) {
+  const employees = [];
 
-  while (!nextEmployee.done) {
-    console.log(`Employee: ${nextEmployee.value}`);
-    nextEmployee = reportWithIterator.next();
+  for (const employee of reportWithIterator) {
+    employees.push(employee);
   }
-};
 
-const departmentName = "Engineering";
-const employeeNames = ["Alice", "Bob", "Charlie"];
-
-const employeesObject = createEmployeesObject(departmentName, employeeNames);
-const report = createReportObject(employeesObject);
-const iterator = createIteratorObject(report);
-
-iterateThroughObject(iterator);
+  return employees.join(' | ');
+}

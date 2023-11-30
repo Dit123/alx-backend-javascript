@@ -1,27 +1,16 @@
-const getFullBudgetObject = (officeSupplies, internet, rent, utilities) => {
-  const currentYear = new Date().getFullYear();
+import getBudgetObject from './7-getBudgetObject';
 
+export default function getFullBudgetObject(income, gdp, capita) {
+  const budget = getBudgetObject(income, gdp, capita);
   const fullBudget = {
-    [`${currentYear}_officeSupplies`]: officeSupplies,
-    [`${currentYear}_internet`]: internet,
-    [`${currentYear}_rent`]: rent,
-    [`${currentYear}_utilities`]: utilities,
-
-    // ES6 method properties
-    calculateTotal() {
-      return this[`${currentYear}_officeSupplies`] +
-             this[`${currentYear}_internet`] +
-             this[`${currentYear}_rent`] +
-             this[`${currentYear}_utilities`];
+    ...budget,
+    getIncomeInDollars(income) {
+      return `$${income}`;
     },
-
-    printBudgetSummary() {
-      console.log(`Total budget for ${currentYear}: $${this.calculateTotal()}`);
+    getIncomeInEuros(income) {
+      return `${income} euros`;
     },
   };
 
   return fullBudget;
-};
-
-const budget = getFullBudgetObject(50, 80, 1000, 200);
-budget.printBudgetSummary();
+}
